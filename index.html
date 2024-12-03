@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pearl Street Partners</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Generate a dynamic favicon with "PSP"
+    window.onload = () => {
+      const canvas = document.createElement('canvas');
+      const context = canvas.getContext('2d');
+      const size = 32;
+
+      canvas.width = size;
+      canvas.height = size;
+
+      // Draw black background
+      context.fillStyle = 'black';
+      context.fillRect(0, 0, size, size);
+
+      // Draw "PSP" in white text
+      context.fillStyle = 'white';
+      context.font = '16px "Times New Roman"';
+      context.textAlign = 'center';
+      context.textBaseline = 'middle';
+      context.fillText('P.S.P.', size / 2, size / 2);
+
+      // Set the canvas as the favicon
+      const favicon = document.createElement('link');
+      favicon.rel = 'icon';
+      favicon.href = canvas.toDataURL('image/png');
+      document.head.appendChild(favicon);
+    };
+  </script>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loading-logo">
+      <span class="logo-main">PEARL STREET</span><br>
+      <span class="logo-sub">P A R T N E R S</span>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header-content">
+      <a href="#home" class="logo">
+        <span class="logo-main">PEARL STREET</span><br>
+        <span class="logo-sub">P A R T N E R S</span>
+      </a>
+      <div class="hamburger">
+        <div class="hamburger-line line1"></div>
+        <div class="hamburger-line line2"></div>
+        <div class="hamburger-line line3"></div>
+    </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#record">Record</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#engagements">Engagements</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+      <a href="https://calendly.com/pearlstreetprs/psp-intro-call?background_color=1a1a1a&text_color=ffffff&primary_color=1870ed" target="_blank" class="cta-button">
+        Schedule a meeting <span class="arrow">→</span>
+    </a>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <video class="video-background" autoplay loop muted playsinline>
+      <source src="https://global.divhunt.com/477bd0c60ef8976e052f45c1e0cae679_4412120.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>
+        Connecting You With<br>
+        <span class="typewriter"><em>Family Offices</em></span><br>
+        Across the US, Europe & Asia
+      </h1>
+      <p>A boutique advisory firm specializing in capital raising, mergers and acquisitions (M&A), and strategic partnerships to help businesses grow and succeed in competitive markets.</p>
+      <a href="https://calendly.com/pearlstreetprs/psp-intro-call?background_color=1a1a1a&text_color=ffffff&primary_color=1870ed" target="_blank" class="cta-button">
+        Schedule a meeting <span class="arrow">→</span>
+    </a>
+    </div>
+  </section>
+
+  <section id="record" class="record-section">
+    <div class="container">
+      <h2 class="record-title">
+        Pearl Street Partners <span style="font-style: italic; color: #888;">Record</span>
+      </h2>
+      <p class="record-description">
+        A hands-on focus on Capital Raising, Specialized Financings, IPO Advisory, and M&A.
+      </p>
+      <div class="record-stats">
+        <div class="stat-item">
+          <span class="record-value" data-target="7000000000" data-format="billion">$7B+</span>
+          <p class="record-label">Aggregated M&A Value</p>
+        </div>
+        <div class="stat-item">
+          <span class="record-value" data-target="55">55</span>
+          <p class="record-label">Years Capital Market Experience</p>
+        </div>
+        <div class="stat-item">
+          <span class="record-value" data-target="5000000000" data-format="billion">$5B+</span>
+          <p class="record-label">Equity & Debt Capital Raised</p>
+        </div>
+        <div class="stat-item">
+          <span class="record-value" data-target="2500">2,500</span>
+          <p class="record-label">Relationships with Family Offices, VCs, & Strategics</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services-section">
+    <video class="services-video-background" autoplay loop muted playsinline>
+      <source src="https://global.divhunt.com/68b8d53011801ff03912bf3cd2af3dc0_2551454.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="container">
+      <h2 class="record-title">
+        Pearl Street <span style="font-style: italic; color: #888;">Services</span>
+      </h2>
+      <div class="services-tabs">
+        <button class="tab active" data-service="capital-raising">Capital Raising (Debt and Equity)</button>
+        <button class="tab" data-service="mergers-acquisitions">Mergers & Acquisitions</button>
+        <button class="tab" data-service="ipo-advisory">IPO Advisory</button>
+        <button class="tab" data-service="specialized-financings">Specialized Financings</button>
+        <button class="tab" data-service="deal-origination">Deal Origination</button>
+      </div>
+      <div class="divider-line"></div>
+      <div class="services-content">
+        <div class="services-text">
+          <h3>Capital Raising (Debt and Equity)</h3>
+          <p>
+            We specialize in structuring tailored debt and equity capital raises that align with your business goals. Our process connects you with investors who bring not just funding but strategic industry insights and valuable networks.
+          </p>
+          <p>
+            Our global experience across the US, EU, and EMEA ensures we identify the ideal partners for your growth, securing optimal terms for long-term success.
+          </p>
+          <a href="https://calendly.com/pearlstreetprs/psp-intro-call?background_color=1a1a1a&text_color=ffffff&primary_color=1870ed" target="_blank" class="cta-button">
+            Schedule a meeting <span class="arrow">→</span>
+        </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="engagements" class="engagements-section">
+    <div class="container">
+      <h2 class="record-title">
+        Pearl Street Partners <span style="font-style: italic; color: #888;">Engagements</span>
+      </h2>
+      <p>See our completed deals and the impact we've created.</p>
+  
+      <!-- Engagement Grid -->
+      <div class="engagements-grid">
+        <div class="engagement-card">
+          <h3>Bitfarms Ltd.</h3>
+          <p>(Canadian Cryptocurrency Mining Company)</p>
+          <p><strong>$20,000,000 equity raise</strong></p>
+          <p>Secured funding for energy-efficient crypto mining expansion</p>
+          <div class="service-type">Capital Raise</div>
+        </div>
+        
+        <div class="engagement-card">
+          <h3>Converge CTS</h3>
+          <p>(Tech Consulting Services)</p>
+          <p><strong>$5,000,000 seed funding</strong></p>
+          <p>Raised capital to develop proprietary AI tools</p>
+          <div class="service-type">IPO Advisory</div>
+        </div>
+        
+        <div class="engagement-card">
+          <h3>Eco Modular Systems</h3>
+          <p>(Eco-Friendly Construction Solutions)</p>
+          <p><strong>$15,000,000 series A funding</strong></p>
+          <p>Expanded operations in sustainable building modules</p>
+          <div class="service-type">Specialized Financing</div>
+        </div>
+        
+        <div class="engagement-card">
+          <h3>FutureGrid Power</h3>
+          <p>(Renewable Energy Grids)</p>
+          <p><strong>$14,000,000 equity financing</strong></p>
+          <p>Deployed green energy systems in urban areas</p>
+          <div class="service-type">Equity Financing</div>
+        </div>
+        
+        <div class="engagement-card">
+          <h3>Hydronix Water Solutions</h3>
+          <p>(Water Purification Equipment)</p>
+          <p><strong>$10,000,000 IPO</strong></p>
+          <p>Guided the company through a successful public listing</p>
+          <div class="service-type">IPO Advisory</div>
+        </div>
+        
+        <div class="engagement-card">
+          <h3>Distinct Infrastructure Group</h3>
+          <p>(Telecommunications Infrastructure)</p>
+          <p><strong>$8,000,000 debt financing</strong></p>
+          <p>Financed deployment of advanced fiber optics</p>
+          <div class="service-type">Debt Financing</div>
+        </div>
+        
+        <div class="engagement-card">
+          <h3>Enervolt Technologies</h3>
+          <p>(Battery Storage Solutions)</p>
+          <p><strong>$18,000,000 capital raise</strong></p>
+          <p>Expanded R&D for next-generation lithium battery systems</p>
+          <div class="service-type">Capital Raise</div>
+        </div>
+        
+        <div class="engagement-card">
+          <h3>Gresham Capital</h3>
+          <p>(Medical Device Incubator Fund)</p>
+          <p><strong>$12,000,000 equity raise</strong></p>
+          <p>Raised $12M for a new incubator fund focused on ventilator manufacturing</p>
+          <div class="service-type">Capital Raise</div>
+        </div>
+        
+        <div class="engagement-card">
+          <h3>HealthAxis Systems</h3>
+          <p>(Healthcare Data Analytics)</p>
+          <p><strong>$20,000,000 series A funding</strong></p>
+          <p>Accelerated development of AI healthcare analytics platform</p>
+          <div class="service-type">Capital Raise</div>
+        </div>
+        
+        <div class="engagement-card">
+          <h3>BlueOcean Robotics</h3>
+          <p>(Industrial Robotics)</p>
+          <p><strong>$10,000,000 venture capital</strong></p>
+          <p>Launched robotics for advanced industrial automation</p>
+          <div class="service-type">Venture Capital</div>
+        </div>
+        
+        <div class="engagement-card">
+          <h3>Protein Power Inc.</h3>
+          <p>(Leading Provider of Protein Products)</p>
+          <p><strong>$25,000,000 CAD equity raise</strong></p>
+          <p>Raised $25M at a $100M pre-money valuation</p>
+          <div class="service-type">Equity Financing</div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </section>
+  
+  
+  
+  
+  <section id="about" class="about-section">
+    <video class="about-video-background" autoplay muted playsinline>
+      <source src="https://global.divhunt.com/c4777b18e14b86229687045f17e8049b_9056373.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+    <div class="about-overlay"></div>
+    <div class="about-content">
+      <h2 class="about-title">
+        <span style="font-style: italic;">About</span> Pearl<br> Street Partners
+      </h2>
+      <p>
+        At Pearl Street Partners, we are a trusted advisory firm specializing in capital raising, mergers & acquisitions, debt advisory, and strategic partnerships. Our mission is to connect businesses with innovative financial solutions that drive growth and long-term success.
+      <p>
+        With over 55 years of combined experience in capital markets, we bring unmatched industry expertise and proprietary insights to every transaction. Our team employs advanced methodologies that go beyond traditional advisory services, crafting customized, high-impact financial strategies designed to meet the unique needs of our clients. Trust us to deliver optimized, tailored solutions that empower your business to thrive in a competitive market.
+      </p>
+      <a href="https://calendly.com/pearlstreetprs/psp-intro-call?background_color=1a1a1a&text_color=ffffff&primary_color=1870ed" target="_blank" class="cta-button">
+        Schedule a meeting <span class="arrow">→</span>
+    </a>
+    </div>
+  </section>
+  
+  
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <span class="logo-main">PEARL STREET</span><br>
+        <span class="logo-sub">P A R T N E R S</span>
+      </div>
+  
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#record">Record</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#engagements">Engagements</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+  
+      <a href="https://calendly.com/pearlstreetprs/psp-intro-call?background_color=1a1a1a&text_color=ffffff&primary_color=1870ed" target="_blank" class="cta-button">
+        Schedule a meeting <span class="arrow">→</span>
+    </a>
+    </div>
+  
+    <div class="footer-divider"></div>
+  
+    <div class="footer-legal">
+      <p>
+        Securities are offered through 
+        <a href="https://www.finra.org/" target="_blank" rel="noopener noreferrer">Finalis Securities LLC Member FINRA / SIPC</a>. 
+        Pearl Street Partners is not a registered broker-dealer, and Finalis Securities LLC and Pearl Street Partners are separate, unaffiliated entities. 
+        <a href="https://www.finra.org/" target="_blank" rel="noopener noreferrer">Finalis Privacy Policy</a> | 
+        <a href="https://www.finra.org/" target="_blank" rel="noopener noreferrer">Finalis Business Continuity Plan</a> | 
+        <a href="https://www.finra.org/" target="_blank" rel="noopener noreferrer">FINRA BrokerCheck</a> 
+        pearstreetpartners.org ("the Pearl Street Partners website") is a website operated by Pearl Street Partners, a privately held limited liability company. 
+        Pearl Street Partners provides financial and strategic advisory, consulting services, capital raising services, etc.
+    </p>
+    
+    </div>
+  </footer>
+  
+  
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
